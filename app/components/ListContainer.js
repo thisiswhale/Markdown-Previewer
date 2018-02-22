@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 
-// Importing our listItem component
 import ListItem from "./ListItem";
-
-// Importing our InputBox component
 import InputBox from "./InputBox";
 
 // currentId will be incremented and used as a new unique id each time one is needed
