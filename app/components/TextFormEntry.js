@@ -1,23 +1,24 @@
-import React,{ Component } from 'react';
+import React, {Component} from 'react';
 
-class TextFormEntry extends Component {
-  constructor(props) {
-    super(props);
+function EditArea() {
+    return (
+        <textarea className='textarea-input form-control' rows="20">
+          Hello
+        </textarea>
+		);
   }
+class TextFormEntry extends Component {
   //add update instance to call
-
-   TextareaInput() {
-	return (
-    <textarea className='textarea-input' rows="10" cols="50">
-      At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
-    </textarea>
-	);
-};
+  constructor(props) {
+  	super(props);
+  }
 
   render() {
-
-      <TextareaInput />
-
+    return (
+      <div className='col'>
+        <EditArea/>
+      </div>
+    )
   }
 }
 
