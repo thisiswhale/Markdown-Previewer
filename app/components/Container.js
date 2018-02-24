@@ -10,9 +10,7 @@ const Container = props => (
 
   <div className="container-fluid">
       <Title />
-    <div className="row">
         {props.children}
-    </div>
   </div>
 );
 

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "dev": "webpack -w",
+    "dev": "webpack -w & node-sass -w public/style.sass -o public",
     "build": "webpack",
     "sass": "node-sass -w public/style.sass -o public",
     "watch-build": "nodemon -e scss -x \"npm run build-css\" webpack",
@@ -28,6 +28,7 @@
     "webpack": "^1.14.0"
   },
   "dependencies": {
+    "marked": "^0.3.16",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   }

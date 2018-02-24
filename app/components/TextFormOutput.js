@@ -1,26 +1,38 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
+import marked from 'marked'
 
-function Markdown() {
-    return (
+console.log(marked('I am using __markdown__.')); // translate into html tags
+console.log(marked('# Marked in browser\n\nRendered by **marked**.'));
 
-        <textarea className='textarea-input' rows="10">
-          Hello here
-        </textarea>
-
-		);
-  }
 class TextFormOutput extends Component {
   //add update instance to call
   constructor(props) {
   	super(props);
+    console.log('hell', props)
+    // this.state = {
+    //   markupValue: marked(props)
+    // };
+    this.Markdown = this.Markdown.bind(this);
   }
 
+  componentDidUpdate(prevProps, prevState) {
+
+      console.log("TextOutHere", marked(this.props.passingText));
+      // console.log("Previous state:", prevState);
+      // console.log("Current state:", this.state);
+  }
+
+  Markdown() {
+      return (
+          <div className='textarea-output'>
+            {/* {marked(this.props.passingText)}  this passes a string*/}
+          </div>
+  		);
+    }
 
   render() {
     return (
-      <div className='col'>
-        <Markdown/>
-      </div>
+        <this.Markdown/>
     )
   }
 }
