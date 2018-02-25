@@ -6,8 +6,8 @@ class TextFormEntry extends Component {
   constructor() {
   	super();
     this.state = {
-      inputValue: "# Marked in browser\n\nRendered by **marked**."
-    };
+      inputValue: `## Your App Title\n#### Choose Any Size \n###### You Like\n\nMake things **Bold** or *italic*, or _**both**_.\n\n##### This code built with:\n- React\n- JavaScript \n- Sass\n\n##### How to code:\n1. Learn code\n2. Write code\n3. ...\n   1. Follow ...\n   2. Then ...\n4. $$$\n\n![Sith Parrot](http://cultofthepartyparrot.com/parrots/hd/sithparrot.gif)\n![Jedi Parrot](http://cultofthepartyparrot.com/parrots/hd/jediparrot.gif)
+    `};
     // Binding handleInputChange since we'll be passing
     //them as callbacks and 'this' will change otherwise
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -29,7 +29,7 @@ class TextFormEntry extends Component {
             className='textarea-input form-control'
             onChange={this.handleInputChange}
             value={this.state.inputValue}
-            rows="20"
+            rows="25"
           />
   		);
     }
