@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "dev": "webpack -w & node-sass -w public/style.sass -o public",
+    "dev": "webpack -w & node-sass -w public/style.scss -o public",
     "build": "webpack",
     "webpack": "webpack -w",
-    "sass": "node-sass -w public/style.sass -o public",
+    "sass": "node-sass -w public/style.scss -o public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
