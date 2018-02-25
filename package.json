@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "webpack -w & node-sass -w public/style.sass -o public",
     "build": "webpack",
+    "webpack": "webpack -w",
     "sass": "node-sass -w public/style.sass -o public",
-    "watch-build": "nodemon -e scss -x \"npm run build-css\" webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

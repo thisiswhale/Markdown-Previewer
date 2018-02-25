@@ -1,8 +1,23 @@
-html {
-  overflow: hidden; }
+html, body {
+  overflow: hidden;
+  margin: 0 50px;
+  margin-top: 1%;
+  background-color: #333077; }
 
-.container-fluid {
-  margin: 3%; }
+.title {
+  color: #fff; }
 
-textarea {
-  overflow: hidden; }
+.container {
+  background-color: #333077 !important; }
+
+.textarea-input {
+  height: auto;
+  overflow: hidden;
+  background-color: #fff;
+  border: 2px #6E69E4 solid; }
+
+.textarea-output {
+  border: 2px #6E69E4 solid;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff; }
