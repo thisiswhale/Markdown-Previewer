@@ -7,7 +7,8 @@ Real-time lightweight markup language converter for your needs.
 
 #### Built with
   - JavaScript
-  - SASS
-  - React.js
+  - SASS/SCSS
+  - React.js with ES6
+  - Webpack - Babel
   - Bootstrap
   - [MarkedJS](https://github.com/markedjs/marked)
